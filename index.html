@@ -12,15 +12,56 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="jumbotron" style="background-color: transparent;">
+            <img class="img-responsive center-block" src="./assets/images/logo.jpg" alt="logo" style="width:25%">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">&nbsp;</div>
+            <div class="col-xs-12 col-md-6" style="overflow:auto;">
+                <div id="start-screen">
+                    <p>Welcome to Terribly Described Movie Trivia! Read each poorly summarized movie plot and choose the movie
+                        that's being described. You will have 30 seconds to answer each one. Do you know the movie well enough
+                        to understand what the description is trying to say? Click the button when you're ready! </p>
+                    <h3 class="btn start">Let's Go!</h3>
+                </div>
+                <div class="panel panel-default" style="border: none;"></div>
+                <h2 class="timer">Time Remaining:
+                    <span id="timer">30s</span>
+                </h2>
+                <div class="gameArea">
+                    <div id="displaySpace"></div>
+                    <div id="options"></div>
+                    <div id="poster"></div>
+                    <div id="answer"></div>
+                </div>
+
+                <div id="end-screen">
+                    <div>That's it! Let's see how you did...</div>
+                    <div>Correct:
+                        <span id="correct">0</span>
+                    </div>
+                    <div>Wrong:
+                        <span id="incorrect">0</span>
+                    </div>
+                    <div>Timed Out:
+                        <span id="timedOut">0</span>
+                    </div>
+                    <div class="btn restart">Play Again</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">&nbsp;</div>
+    </div>
+    </div>
 
 
-
-    <div class="panel-footer" style="text-align: center;">&copy; 2017 Anthony Kim</div>
-
-
+    <!-- <div class="panel-footer" style="text-align: center;">&copy; 2017 Anthony Kim</div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
